@@ -24,6 +24,11 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
+    /**
+     * 상품 목록을 리턴한다.
+     *
+     * @return
+     */
     public List<Product> getProducts() {
         return productRepository.findAll();
     }
